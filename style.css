@@ -1,0 +1,141 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main--container {
+    width: 85%;
+    /* border: 2px solid red; */
+    position: relative;
+    text-align: center;
+}
+.images--gallery {
+    width: 100%;
+    overflow: hidden;
+}
+.images--gallery .images {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin-left 3s ease;
+}
+
+.images--gallery .images li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.images--gallery img {
+    width: 600px;
+    height: 600px;
+}
+.next--button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-40px);
+    background-color: #F7CB74;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.previous--button {
+    position: absolute;
+    top: 50%;
+    transform: translateX(40px);
+    background-color: #F7CB74;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+/* .main--container {
+    position: relative;
+    width: calc(100% - 100px);
+
+}
+
+.main--container img {
+    width: 400px;
+    height: 400px;
+    display: block;
+}
+
+.images li {
+    display: inline-block;
+}
+
+.previous--button {
+    position: absolute;
+    top: 50%;
+    transform: translateX(40px);
+    background-color: #505DC7;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.next--button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-40px);
+    background-color: #505DC7;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.previous--button:focus {
+    outline: none;
+}
+.next--button:focus {
+    outline: none;
+}
+
+.images--gallery {
+    border: 3px solid red;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.images--gallery ul {
+    list-style: none;
+    transition: margin-left 250ms ease-in-out;
+    height: 400px;
+
+} */
